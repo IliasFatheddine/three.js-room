@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Blery’s Trial R3F Room</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Instrument+Sans:wght@400;500&family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="goo" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur in="SourceGraphic" stdDeviation="2.7" result="b"/><feColorMatrix in="b" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -6.8"/></filter></svg>
+<section class="hero" id="hero">
+  <h1 class="sr">Step inside Blery’s Trial R3F Room</h1>
+  <div id="stage" tabindex="0" aria-label="First-person 3D view inside Blery’s Trial R3F Room. Use W A S D to move and drag to look."></div>
+  <div class="veil"></div>
+  <canvas id="venom" aria-hidden="true"></canvas>
+  <div class="stack">
+  <p class="quote"><span>You don’t become a captain by avoiding storms.</span><span>You should learn how to navigate them, kid.</span></p>
+  <div class="gate"><button class="seal" id="go" type="button">Step inside</button><button class="t" id="snd" type="button">Sound: on</button></div>
+  </div>
+  <div id="aim"></div>
+  <div id="stick"><i></i></div>
+  <div id="hud"><span id="hint">W A S D to move</span><button class="t" id="leave" type="button">Leave the room</button></div>
+  <div id="ktag">About</div>
+  <button type="button" id="kclose">Close the box</button>
+  <div id="btag">Open Blery’s log</div>
+  <div id="nflash"></div>
+  <div id="note" role="dialog" aria-modal="true" aria-labelledby="notet"><div class="paper"><div class="sheet">
+  <h2 id="notet" class="ink nt">Blery’s Log</h2>
+  <div class="ink nb"><p class="op">Somewhere beyond the known waters…</p>
+  <p>I never planned to become a captain.<br>I simply kept following dreams and things I wanted to understand.</p>
+  <p>One idea will lead to another.<br>One mistake can teach you how to navigate the next one.</p>
+  <p>The sea will never be calm.</p>
+  <p>There will be broken plans, unfinished ideas,<br>and storms you didn’t see coming.</p>
+  <p class="em">Don’t let them stop you.</p>
+  <p>Keep learning. Keep building. Keep moving.</p>
+  <p>This is my log.<br>These are my voyages.</p>
+  <p class="fl">The floor might tell you more.</p></div>
+  <button type="button" id="noteclose" class="ink">Seal it again</button></div></div></div>
+  <div id="load" role="status">Opening the door…</div>
+  <div class="warn" id="warn" role="dialog" aria-modal="true" aria-labelledby="warnt"><div class="wbox"><h2 id="warnt">Before you enter</h2><p>If you are using a very low-performance computer, this page may crash.</p><p class="rec"><strong>Recommended:</strong> 8 GB of RAM or more, on a laptop or desktop computer.</p><div class="wbtn"><button type="button" id="wrest">Go rest kid</button><button type="button" id="wgo" class="pri">Let’s explore</button></div></div></div>
+</section>
+
+<!-- 3D library -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/libs/meshopt_decoder.js"></script>
+<!-- 3D models -->
+<script src="assets/models/room.js"></script>
+<script src="assets/models/bottle.js"></script>
+<script src="assets/models/book.js"></script>
+<!-- code -->
+<script src="js/compat.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cursor.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+# See http://help.github.io/gitignore/# templates for common directions
+# Static HTML/CSS/JS project ignore
+
+# Dependencies
+node_modules/
+
+# IDE / Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build / dist (if any)
+dist/
+build/
+
+# Temporary files
+*.tmp
